@@ -1168,7 +1168,9 @@ textarea:-moz-placeholder {
 /* 5. Footer ------------------------------------------------------------ */
 /* Footer hp-1*/
 .footer-section.section-box {
-  padding: 117px 0 104px; }
+  padding: 117px 0 104px;
+margin: 0; 
+}
 
 .footer-section {
   background: #333;
@@ -1461,6 +1463,10 @@ textarea:-moz-placeholder {
 /* End Landing Page Section */
 /* 6. Homepage ------------------------------------------------------------ */
 /* Slider Revolution Section */
+section.home-slider.style-home-slider-hp-1
+    {
+      padding-inline: 0;
+    }
 .style-home-slider-hp-1 {
   padding: 0 80px; }
   .style-home-slider-hp-1 .slide-caption-title-1 {
