@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<!-- Basic Page Needs
+	================================================== -->
+	<meta charset="utf-8">
+	<title>Big Gallery</title>
+	<meta name="description" content="">
+	<meta name="author" content="">
+	<!-- Mobile Specific Metas
+  	================================================== -->
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<!-- Favicon
+  	================================================== -->
+	<link rel="shortcut icon" href="favicon.png" />
+	<!-- Font
+  ================================================== -->
+	<link rel="stylesheet" type="text/css"
+		href="fonts/material-design-iconic-font/css/material-design-iconic-font.min.css">
+	<link rel="stylesheet" type="text/css" href="fonts/linearicons/style.css">
+	<link rel="stylesheet" type="text/css" href="css/poppins-font.css">
+	<!-- CSS   
+  ================================================== -->
+	<!-- Bootrap -->
+	<link rel="stylesheet" href="vendor/bootrap/css/bootstrap.min.css" />
+	<!-- Owl Carousel 2 -->
+	<link rel="stylesheet" href="vendor/owl/css/owl.carousel.min.css">
+	<link rel="stylesheet" href="vendor/owl/css/owl.theme.default.min.css">
+	<link rel="stylesheet" href="vendor/owl/css/animate.css">
+	<!-- Slider Revolution CSS Files -->
+	<link rel="stylesheet" type="text/css" href="vendor/revolution/css/settings.css">
+	<link rel="stylesheet" type="text/css" href="vendor/revolution/css/layers.css">
+	<link rel="stylesheet" type="text/css" href="vendor/revolution/css/navigation.css">
+	<!-- fancybox-master Library -->
+	<link rel="stylesheet" type="text/css" href="vendor/fancybox-master/css/jquery.fancybox.min.css">
+	<!-- Audio Library-->
+	<link rel="stylesheet" href="vendor/mejs/mediaelementplayer.css">
+	<!-- noUiSlider Library -->
+	<link rel="stylesheet" type="text/css" href="vendor/nouislider/css/nouislider.css">
+	<!-- Main Style Css -->
+	<link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body class="big-gallery">
+	<!-- Images Loader -->
+	<div class="images-preloader">
+		<div id="preloader_1" class="rectangle-bounce">
+			<span></span>
+			<span></span>
+			<span></span>
+			<span></span>
+			<span></span>
+		</div>
+	</div>
+	<header class="header">
+		<!-- Show Desktop Header -->
+		<div class="show-desktop-header header-hp-1">
+			<div id="js-navbar-fixed" class="menu-desktop">
+				<div class="container-fluid">
+					<div class="menu-desktop-inner">
+						<!-- Logo -->
+						<div class="logo">
+							<a href="index.html"><img src="images/icons/logo-black.png"></a>
+						</div>
+						<!-- Main Menu -->
+						<!-- Main Menu -->
+						<nav class="main-menu">
+							<ul>
+								<li class="menu-item">
+									<a href="index.html" class="current">
+										INICIO
+									</a>
+								</li>
+								<li class="menu-item">
+									<a href="nosotros.html">
+										NOSOTROS
+									</a>
+								</li>
+								<li class="menu-item">
+									<a href="#">
+										PRODUCTOS
+									</a>
+									<ul class="sub-menu">
+										<li>
+											<a href="index.html">Línea Escolar
+											</a>
+										</li>
+										<li>
+											<a href="#industrial">
+												Línea Industrial
+											</a>
+										</li>
+										<li>
+											<a href="#empresarial">
+												Línea Empresarial
+											</a>
+										</li>
+										<li>
+											<a href="#medica">
+												Línea Médica
+											</a>
+										</li>
+										<li>
+											<a href="#playa">
+												Línea de Playa
+											</a>
+										</li>
+										<li>
+											<a href="#cocina">
+												Línea de Cocina
+											</a>
+										</li>
+									</ul>
+								</li>
+								<li class="menu-item">
+									<a href="merceria.html">
+										MERCERIA
+									</a>
+								</li>
+								<li class="menu-item mega-menu mega-menu-1">
+									<a href="#contacto">
+										CONTACTO
+									</a>
+								</li>
+							</ul>
+						</nav>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- Show Mobile Header -->
+		<div id="js-navbar-mb-fixed" class="show-mobile-header">
+			<!-- Logo And Hamburger Button -->
+			<div class="mobile-top-header">
+				<div class="logo-mobile">
+					<a href="index.html"><img src="images/icons/logo-black.png" alt="logo"></a>
+				</div>
+				<button class="hamburger hamburger--spin hidden-tablet-landscape-up" id="toggle-icon">
+					<span class="hamburger-box">
+						<span class="hamburger-inner"></span>
+					</span>
+				</button>
+			</div>
+			<!-- Au Navbar Menu -->
+			<div class="au-navbar-mobile navbar-mobile-1">
+				<div class="au-navbar-menu">
+					<ul>
+						<li class="drop">
+							<a class="drop-link" href="#inicio">
+								INICIO
+							</a>
+						</li>
+						<li class="drop">
+							<a class="drop-link" href="#medica">
+								NOSOTROS
+							</a>
+						</li>
+						<li class="drop">
+							<a class="drop-link" href="#">
+								PRODUCTOS
+								<span class="arrow">
+									<i class="zmdi zmdi-chevron-down"></i>
+								</span>
+							</a>
+							<ul class="drop-menu bottom-right">
+								<li><a href="#escolar">Escolar</a></li>
+								<li><a href="#industrial">Industrial</a></li>
+								<li><a href="#empresarial">Empresarial</a></li>
+								<li><a href="#medica">Médica</a></li>
+								<li><a href="#playa">Playa</a></li>
+								<li><a href="#cocina">Cocina</a></li>
+							</ul>
+						</li>
+						<li class="drop">
+							<a class="drop-link" href="#empresarial">
+								MERCERIA
+							</a>
+						</li>
+						<li class="drop">
+							<a class="drop-link" href="#playa">
+								CONTACTO
+							</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</header>
+	<div class="page-content">
+		<!-- Portfolio Section -->
+		<section class="single-portfolio single-portfolio-big section-box">
+			<div class="container">
+				<div class="portfolio-content">
+					<div class="row">
+						<div class="col-xl-4 col-lg-4 col-md-4 col-sm-6 col-12">
+							<div class="product-images">
+								<figure>
+									<img src="images/big-gallery-1.jpg" alt="product-images">
+									<a href="images/big-gallery-1.jpg" data-fancybox="gallery" class="gallery-elements">
+									</a>
+								</figure>
+							</div>
+						</div>
+						<div class="col-xl-4 col-lg-4 col-md-4 col-sm-6 col-12">
+							<div class="product-images">
+								<figure>
+									<img src="images/big-gallery-2.jpg" alt="product-images">
+									<a href="images/big-gallery-2.jpg" data-fancybox="gallery" class="gallery-elements">
+									</a>
+								</figure>
+							</div>
+						</div>
+						<div class="col-xl-4 col-lg-4 col-md-4 col-sm-6 col-12">
+							<div class="product-images">
+								<figure>
+									<img src="images/big-gallery-3.jpg" alt="product-images">
+									<a href="images/big-gallery-3.jpg" data-fancybox="gallery" class="gallery-elements">
+									</a>
+								</figure>
+							</div>
+						</div>
+						<div class="col-xl-4 col-lg-4 col-md-4 col-sm-6 col-12">
+							<div class="product-images">
+								<figure>
+									<img src="images/big-gallery-4.jpg" alt="product-images">
+									<a href="images/big-gallery-4.jpg" data-fancybox="gallery" class="gallery-elements">
+									</a>
+								</figure>
+							</div>
+						</div>
+						<div class="col-xl-4 col-lg-4 col-md-4 col-sm-6 col-12">
+							<div class="product-images">
+								<figure>
+									<img src="images/big-gallery-5.jpg" alt="product-images">
+									<a href="images/big-gallery-5.jpg" data-fancybox="gallery" class="gallery-elements">
+									</a>
+								</figure>
+							</div>
+						</div>
+						<div class="col-xl-4 col-lg-4 col-md-4 col-sm-6 col-12">
+							<div class="product-images">
+								<figure>
+									<img src="images/big-gallery-6.jpg" alt="product-images">
+									<a href="images/big-gallery-6.jpg" data-fancybox="gallery" class="gallery-elements">
+									</a>
+								</figure>
+							</div>
+						</div>
+						<div class="col-12">
+							<div class="product-info">
+								<div class="info-1">
+									<h2>Servicio de Mercería</h2>
+									<p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+										do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+										veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+										consequat.</p>
+								</div>
+								<div class="info-1">
+									<span>Dirección:</span>
+									<p>C. John F. Kennedy 118, Isidro Fabela, Tlalpan, CDMX</p>
+									<span>Correo Electronico:</span>
+									<p>ventas@elhiloylaaguja.com</p>
+									<span>Telefono:</span>
+									<p>5544378119</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- End Portfolio Section -->
+	</div>
+
+	<footer id="contacto" class="footer-section section-box">
+		<div class="footer-content">
+			<div class="container">
+				<div class="row">
+					<div class="col-xl-3 col-lg-3 col-md-6 col-sm-12 col-12">
+						<div class="footer-items">
+							<div class="logo">
+								<a href="index.html"><img src="images/icons/logo-white.png" alt="logo"></a>
+							</div>
+							<p>Descubre la calidad en cada puntada. Explora nuestra colección y protégete con estilo hoy
+								mismo.</p>
+							<div class="socials">
+								<a href="https://www.facebook.com/Elhiloylaaguja"><i class="zmdi zmdi-facebook"></i></a>
+								<a href="https://g.co/kgs/VGuVePP"><i class="zmdi zmdi-map"></i></a>
+								<a href="https://www.instagram.com/elhiloylaaguja/"><i
+										class="zmdi zmdi-instagram"></i></a>
+							</div>
+						</div>
+					</div>
+					<div class="col-xl-3 col-lg-3 col-md-6 col-sm-12 col-12">
+						<div class="footer-items footer-items-1">
+							<h4>Contacto</h4>
+							<div class="contact">
+								<i class="zmdi zmdi-map"></i>
+								<span>C. John F. Kennedy 110, Isidro Fabela, Tlalpan, CDMX</span>
+							</div>
+							<div class="contact">
+								<i class="zmdi zmdi-phone"></i>
+								<span><a href="tel:15618003666666">+52 5544378119</a></span>
+							</div>
+							<div class="contact">
+								<i class="zmdi zmdi-email"></i>
+								<span>ventas@elhiloylaaguja.com</span>
+							</div>
+							<div class="contact">
+								<i class="zmdi zmdi-globe"></i>
+								<span>elhiloylaaguja.com</span>
+							</div>
+						</div>
+					</div>
+					<div class="col-xl-3 col-lg-3 col-md-6 col-sm-12 col-12">
+						<div class="footer-items">
+							<h4>Ofertas y promociones</h4>
+							<p>Suscríbete a nuestro boletín</p>
+							<div class="email">
+								<div class="send">
+									<i class="zmdi zmdi-mail-send"></i>
+								</div>
+								<input type="email" required="" pattern="[^@]+@[^@]+.[a-zA-Z]{2,6}" name="email"
+									placeholder="Tu correo electronico...">
+							</div>
+
+							<span>Todos los derechos reservados<a href="seigle.xyz" target="_blank">2024
+									StudioSeigle</a></span>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
+
+	<a href="#" id="back-to-top"></a>
+	<!--  JS  -->
+	<!-- Jquery -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<!-- Bootrap -->
+	<script src="vendor/bootrap/js/bootstrap.min.js"></script>
+	<!-- Owl Carousel 2 -->
+	<script src="vendor/owl/js/owl.carousel.min.js"></script>
+	<script src="vendor/owl/js/OwlCarousel2Thumbs.min.js"></script>
+	<!-- Slider Revolution core JavaScript files -->
+	<script src="vendor/revolution/js/jquery.themepunch.tools.min.js"></script>
+	<script src="vendor/revolution/js/jquery.themepunch.revolution.min.js"></script>
+	<!-- Isotope Library-->
+	<script type="text/javascript" src="js/isotope.pkgd.min.js"></script>
+	<script src="js/imagesloaded.pkgd.min.js"></script>
+	<!-- Masonry Library -->
+	<script type="text/javascript" src="js/jquery.masonry.min.js"></script>
+	<script type="text/javascript" src="js/masonry.pkgd.min.js"></script>
+	<!-- fancybox-master Library -->
+	<script type="text/javascript" src="vendor/fancybox-master/js/jquery.fancybox.min.js"></script>
+	<!-- Google Map -->
+	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAEmXgQ65zpsjsEAfNPP9mBAz-5zjnIZBw"></script>
+	<script src="js/theme-map.js"></script>
+	<!-- Countdown Library -->
+	<script src="vendor/countdown/jquery.countdown.min.js"></script>
+	<!-- Audio Library-->
+	<script src="vendor/mejs/mediaelement-and-player.min.js"></script>
+	<!-- noUiSlider Library -->
+	<script type="text/javascript" src="vendor/nouislider/js/nouislider.js"></script>
+	<!-- Form -->
+	<script src="vendor/sweetalert/sweetalert.min.js"></script>
+	<script src="js/config-contact.js"></script>
+	<!-- Main Js -->
+	<script src="js/custom.js"></script>
+</body>
+
+</html>
