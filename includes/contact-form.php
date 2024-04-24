@@ -127,7 +127,7 @@ if (MAIL_TITLE != null) {
 
 } else {
 
-    $subject = '[Novas] Contact Form Message';
+    $subject = 'Contact Form Message';
 
 }
 
@@ -139,7 +139,7 @@ $headers .= "MIME-Version: 1.0\n";
 
 $headers .= "Content-type: text/html; charset=iso-8859-1\n";
 
-if( mail($to, $subject, $message, $headers) ) {
+if( email($to, $subject, $message, $headers) ) {
 
     $serialized_data = '{"type":"success", "message":"Contact form successfully submitted. Thank you, I will get back to you soon!"}';
 

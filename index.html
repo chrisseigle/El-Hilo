@@ -621,13 +621,15 @@
 						<div class="footer-items footer-items-2">
 							<h4>Ofertas y promociones</h4>
 							<p>Suscríbete a nuestro boletín</p>
-							<div class="email">
-								<div class="send">
-									<i class="zmdi zmdi-mail-send"></i>
+							<form class="email js-contact-form" method="POST" action="includes/contact-form.php">
+								<div class="form-input">
+									<input type="email" required="" pattern="[^@]+@[^@]+.[a-zA-Z]{2,6}" name="email" placeholder="Your e-mail...">
 								</div>
-								<input type="email" required="" pattern="[^@]+@[^@]+.[a-zA-Z]{2,6}" name="email"
-									placeholder="Tu correo electrónico...">
-							</div>
+								<div class="form-bottom">
+									<input type="submit"
+									<span><i class="zmdi zmdi-arrow-right"></i></span>
+								</div>
+							</form>
 
 							<span>Todos los derechos reservados<a href="seigle.xyz" target="_blank">2024
 									StudioSeigle</a></span>
@@ -656,9 +658,6 @@
 	<script type="text/javascript" src="js/masonry.pkgd.min.js"></script>
 	<!-- fancybox-master Library -->
 	<script type="text/javascript" src="vendor/fancybox-master/js/jquery.fancybox.min.js"></script>
-	<!-- Google Map -->
-	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAEmXgQ65zpsjsEAfNPP9mBAz-5zjnIZBw"></script>
-	<script src="js/theme-map.js"></script>
 	<!-- Countdown Library -->
 	<script src="vendor/countdown/jquery.countdown.min.js"></script>
 	<!-- Audio Library-->
