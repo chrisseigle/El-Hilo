@@ -115,7 +115,7 @@ if (MAIL_HOST != null) {
 
 } else {
 
-    $to = "trieuau@gmail.com";
+    $to = "ventas@elhiloylaaguja.com";
 
 }
 

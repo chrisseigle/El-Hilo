@@ -12,6 +12,32 @@
   11. Elements  
   12. Responsive 
   -------------------------------------------------------------------*/
+  .btn-wsp{
+  position:fixed;
+  width:60px;
+  height:60px;
+  line-height: 63px;
+  bottom:25px;
+  right:25px;
+  background:#25d366;
+  color:rgb(255, 255, 255);
+  border-radius:50px;
+  text-align:center;
+  font-size:35px;
+  box-shadow: 0px 1px 10px rgba(0,0,0,0.3);
+  z-index:100;
+  transition: all 300ms ease;
+}
+.btn-wsp:hover{
+  background: #20ba5a;
+}
+@media only screen and (min-width:320px) and (max-width:768px){
+  .btn-wsp{
+      width:63px;
+      height:63px;
+      line-height: 66px;
+}
+}
 /* 2. Extend ------------------------------------------------------------ */
 display-flex, .header-hp-1 .menu-desktop-inner, .header-hp-1 .header-right, .header-hp-1 .site-header-cart .widget_shopping_cart .woocommerce-mini-cart__total, .header-hp-1 .site-header-cart .widget_shopping_cart .woocommerce-mini-cart__buttons, .header-hp-1 #canvasModal .canvas-content .contact .contact-inner, .landing-header .landing-inner-1, .landing-layout .content, .landing-page-section .content .portfolio-image-view .portfolio-right, .landing-page-section .content .page-image-view .page-left, .testimonials-hp-1 .owl-carousel.owl-theme .owl-nav, .style-home-slider-hp-2 .wrap-scroll-slider1 .scroll-slider1, .style-home-slider-hp-2 .display-flex-center, .arrivals-hp-2 .arrivals-content .arrivals-left .owl-theme .owl-nav, .arrivals-hp-2 .arrivals-content .woocommerce .owl-carousel .item, .deal-hp-2 .deal-content #clockdiv, .news-hp-4 .news-content .news-details .info .date, .newsletter-hp-4 .newsletter-details, .items-hp-5 .woocommerce, .items-hp-5 .woocommerce .woocommerce-product-gallery .owl-carousel .owl-thumbs, .list-hp-6 .woocommerce .content-area .type-product .add_to_wishlist, .list-hp-6 .woocommerce .content-area .type-product .add_to_cart_button a, .contact-section .contact-content .contact-details .contact-info, .coming-soon-page .page-detail, .coming-soon-page .page-detail .page-inner #clock, .page-not-found .page-detail, .featured-hp-1.shop-full-page .woocommerce .storefront-sorting, .shop-right-siderbar .widget-area .widget_price_filter .price_slider_amount, .shop-right-siderbar .widget-area .widget_product_categories .product-categories .cat-item, .shop-single-v1-section .woocommerce .summary .woocommerce-product-rating, .shop-single-v1-section .woocommerce .woocommerce-tabs .tab-content .woocommerce-Reviews #comments .comment-item .comment-author, .blog-sidebar-right .woocommerce .content-area .final-blog, .blog-sidebar-right .woocommerce .widget-area .widget_product_categories .product-categories .cat-item, .blog-sidebar-right .woocommerce .widget-area .novas-insta .insta-inner, .blog-standard-post .woocommerce .content-area .post-content .post-image, .blog-standard-post .woocommerce .content-area .related-posts, .blog-gallery-post .owl-carousel .owl-nav, .single-portfolio .portfolio-content .pagination-content, .single-portfolio.single-portfolio-big .portfolio-content .product-info {
   display: flex;
@@ -1178,7 +1204,7 @@ margin: 0;
   .footer-section .footer-content .footer-items.footer-items-1 {
     padding-left: 70px; }
   .footer-section .footer-content .footer-items.footer-items-2 {
-    padding-left: 63px; }
+    padding-left: 0px; }
   .footer-section .footer-content .footer-items .logo {
     padding-bottom: 30px; }
   .footer-section .footer-content .footer-items h4 {
@@ -1187,6 +1213,7 @@ margin: 0;
   .footer-section .footer-content .footer-items p {
     color: #fff; }
   .footer-section .footer-content .footer-items span {
+    font-size: 14px;
     color: #fff; }
   .footer-section .footer-content .footer-items .socials {
     padding-top: 21px; }
