@@ -157,11 +157,11 @@
 						</li>
 						<li class="drop">
 							<a class="drop-link">
-							PRODUCTOS
+								PRODUCTOS
 								<span class="arrow">
 									<i class="zmdi zmdi-chevron-down"></i>
 								</span>
-							</a>							
+							</a>
 							<ul class="drop-menu bottom-right">
 								<li><a href="#escolar">Escolar</a></li>
 								<li><a href="#industrial">Industrial</a></li>
@@ -621,16 +621,11 @@
 						<div class="footer-items footer-items-2">
 							<h4>Ofertas y promociones</h4>
 							<p>Suscríbete a nuestro boletín</p>
-							<form class="email js-contact-form" method="POST" action="includes/contact-form.php">
-								<div class="form-input">
-									<input type="email" required="" pattern="[^@]+@[^@]+.[a-zA-Z]{2,6}" name="email" placeholder="Your e-mail...">
-								</div>
-								<div class="form-bottom">
-									<input type="submit"
-									<span><i class="zmdi zmdi-arrow-right"></i></span>
-								</div>
+							<form action="#" class="email ">
+								<input type="email" name="EMAIL" required="" pattern="[^@]+@[^@]+.[a-zA-Z]{2,6}"
+									placeholder="Ingresa tu correo electronico...">
+								<input id="p_submit" type="submit" value="send">
 							</form>
-
 							<span>Todos los derechos reservados<a href="seigle.xyz" target="_blank">2024
 									StudioSeigle</a></span>
 						</div>
@@ -660,8 +655,7 @@
 	<script type="text/javascript" src="vendor/fancybox-master/js/jquery.fancybox.min.js"></script>
 	<!-- Countdown Library -->
 	<script src="vendor/countdown/jquery.countdown.min.js"></script>
-	<!-- Audio Library-->
-	<script src="vendor/mejs/mediaelement-and-player.min.js"></script>
+
 	<!-- noUiSlider Library -->
 	<script type="text/javascript" src="vendor/nouislider/js/nouislider.js"></script>
 	<!-- Form -->
@@ -669,6 +663,11 @@
 	<script src="js/config-contact.js"></script>
 	<!-- Main Js -->
 	<script src="js/custom.js"></script>
+
+	<!-- sendmail -->
+	<script type="text/javascript" src="js/vendor/validator.min.js"></script>
+	<script type="text/javascript" src="js/vendor/form-scripts.js"></script>
+	<script type="text/javascript" src="js/script.js"></script>
 
 	<a href="https://wa.link/bl8xfn" class="btn-wsp" target="_blank">
 		<i class="zmdi zmdi-whatsapp"></i>
