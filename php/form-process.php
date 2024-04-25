@@ -1,56 +1,54 @@
 <?php
 
-$errorMSG = "";
+$to = 'info@angyrangel.com';
+$subject = 'Mensaje de ';
 
-// NAME
-if (empty($_POST["name"])) {
-    $errorMSG = "Name is required ";
-} else {
-    $name = $_POST["name"];
+$name = "";
+$email = "";
+$phone = "";
+$message = "";
+
+if( isset($_POST['name']) ){
+    $name = $_POST['name'];
+
+    $body .= "Name: ";
+    $body .= $name;
+    $body .= "\n\n";
+}
+if( isset($_POST['subject']) ){
+    $subject = $_POST['subject'];
+}
+if( isset($_POST['email']) ){
+    $email = $_POST['email'];
+
+    $body .= "";
+    $body .= "Email: ";
+    $body .= $email;
+    $body .= "\n\n";
+}
+if( isset($_POST['phone']) ){
+    $phone = $_POST['phone'];
+
+    $body .= "";
+    $body .= "Phone: ";
+    $body .= $phone;
+    $body .= "\n\n";
+}
+if( isset($_POST['message']) ){
+    $message = $_POST['message'];
+
+    $body .= "";
+    $body .= "Message: ";
+    $body .= $message;
+    $body .= "\n\n";
 }
 
-// EMAIL
-if (empty($_POST["email"])) {
-    $errorMSG .= "Email is required ";
-} else {
-    $email = $_POST["email"];
+$headers = 'From: ' .$email . "\r\n";
+
+if (filter_var($email, FILTER_VALIDATE_EMAIL)) {
+mb_send_mail($to, $subject, $body, $headers);
+    echo '<div class="status-icon valid"><i class="fa fa-check"></i></div>';
 }
-
-// MESSAGE
-if (empty($_POST["message"])) {
-    $errorMSG .= "Message is required ";
-} else {
-    $message = $_POST["message"];
+else{
+    echo '<div class="status-icon invalid"><i class="fa fa-times"></i></div>';
 }
-
-
-$EmailTo = "mktseigle@gmail.com";
-$Subject = "Solicitud de información de ";
-
-// prepare email body text
-$Body = "";
-$Body .= "Name: ";
-$Body .= $name;
-$Body .= "\n";
-$Body .= "Email: ";
-$Body .= $email;
-$Body .= "\n";
-$Body .= "Message: ";
-$Body .= $message;
-$Body .= "\n";
-
-// send email
-$success = mail($EmailTo, $Subject, $Body, "From:".$email);
-
-// redirect to success page
-if ($success && $errorMSG == ""){
-   echo "success";
-}else{
-    if($errorMSG == ""){
-        echo "Something went wrong :(";
-    } else {
-        echo $errorMSG;
-    }
-}
-
-?>
