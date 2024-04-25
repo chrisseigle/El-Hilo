@@ -3,7 +3,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $nombre = $_POST["nombre"];
     $email = $_POST["email"];
     
-    $destinatario = "mktseigle@gmiale.com"; // Cambia esto por tu dirección de correo electrónico
+    $destinatario = "mktseigle@gmail.com"; // Cambia esto por tu dirección de correo electrónico
     $asunto = "Nuevo mensaje de contacto";
 
     $mensaje = "Nombre: $nombre\n";
