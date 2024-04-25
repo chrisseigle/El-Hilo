@@ -115,7 +115,7 @@ if (MAIL_HOST != null) {
 
 } else {
 
-    $to = "ventas@elhiloylaaguja.com";
+    $to = "mktseigle@gmail.com";
 
 }
 
@@ -127,7 +127,7 @@ if (MAIL_TITLE != null) {
 
 } else {
 
-    $subject = 'Contact Form Message';
+    $subject = '[EHLA] Mensaje del formulario de contacto';
 
 }
 
@@ -139,15 +139,15 @@ $headers .= "MIME-Version: 1.0\n";
 
 $headers .= "Content-type: text/html; charset=iso-8859-1\n";
 
-if( email($to, $subject, $message, $headers) ) {
+if( mail($to, $subject, $message, $headers) ) {
 
-    $serialized_data = '{"type":"success", "message":"Contact form successfully submitted. Thank you, I will get back to you soon!"}';
+    $serialized_data = '{"type":"Listo", "message":"¡Enviado exitosamente. ¡Gracias, me comunicaré contigo pronto!"}';
 
     echo $serialized_data;
 
 } else {
 
-    $serialized_data = '{"type":"danger", "message":"Contact form failed. Please send again later!"}';
+    $serialized_data = '{"type":"Error", "message":"El envio falló. ¡Por favor envíalo de nuevo más tarde!"}';
 
     echo $serialized_data;
 

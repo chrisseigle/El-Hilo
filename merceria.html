@@ -163,12 +163,12 @@
 								</span>
 							</a>							
 							<ul class="drop-menu bottom-right">
-								<li><a href="#escolar">Escolar</a></li>
-								<li><a href="#industrial">Industrial</a></li>
-								<li><a href="#empresarial">Empresarial</a></li>
-								<li><a href="#medica">Médica</a></li>
-								<li><a href="#playa">Playa</a></li>
-								<li><a href="#cocina">Cocina</a></li>
+								<li><a href="index.html#escolar">Escolar</a></li>
+								<li><a href="index.html#industrial">Industrial</a></li>
+								<li><a href="index.html#empresarial">Empresarial</a></li>
+								<li><a href="index.html#medica">Médica</a></li>
+								<li><a href="index.html#playa">Playa</a></li>
+								<li><a href="index.html#cocina">Cocina</a></li>
 							</ul>
 						</li>
 						<li class="drop">
@@ -294,7 +294,7 @@
 						</div>
 					</div>
 					<div class="col-xl-3 col-lg-3 col-md-6 col-sm-12 col-12">
-						<div class="footer-items footer-items-2">
+						<div class="footer-items">
 							<h4>Contacto</h4>
 							<div class="contact">
 								<i class="zmdi zmdi-map"></i>
@@ -302,7 +302,7 @@
 							</div>
 							<div class="contact">
 								<i class="zmdi zmdi-phone"></i>
-								<span><a href="tel:15618003666666">+52 5544378119</a></span>
+								<span><a href="tel:5544378119">5544378119</a></span>
 							</div>
 							<div class="contact">
 								<i class="zmdi zmdi-email"></i>
@@ -319,11 +319,14 @@
 							<h4>Ofertas y promociones</h4>
 							<p>Suscríbete a nuestro boletín</p>
 							<div class="email">
-								<div class="send">
-									<i class="zmdi zmdi-mail-send"></i>
-								</div>
-								<input type="email" required="" pattern="[^@]+@[^@]+.[a-zA-Z]{2,6}" name="email"
-									placeholder="Tu correo electrónico...">
+								<form class="form-contact js-contact-form" method="POST" action="includes/contact-form.php">
+									<div class="form-input">
+										<input type="email" required pattern="[^@]+@[^@]+.[a-zA-Z]{2,6}" name="email" placeholder="Correo electrónico...">
+									</div>
+									<div class="form-bottom">
+										<input type="submit">
+									</div>
+								</form>
 							</div>
 
 							<span>Todos los derechos reservados<a href="seigle.xyz" target="_blank">2024
@@ -334,8 +337,7 @@
 			</div>
 		</div>
 	</footer>
-
-	<!--  JS  -->
+		<!--  JS  -->
 	<!-- Jquery -->
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 	<!-- Bootrap -->

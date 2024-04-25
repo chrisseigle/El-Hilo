@@ -597,7 +597,7 @@
 						</div>
 					</div>
 					<div class="col-xl-3 col-lg-3 col-md-6 col-sm-12 col-12">
-						<div class="footer-items footer-items-2">
+						<div class="footer-items">
 							<h4>Contacto</h4>
 							<div class="contact">
 								<i class="zmdi zmdi-map"></i>
@@ -618,20 +618,18 @@
 						</div>
 					</div>
 					<div class="col-xl-3 col-lg-3 col-md-6 col-sm-12 col-12">
-						<div class="footer-items footer-items-2">
+						<div class="footer-items">
 							<h4>Ofertas y promociones</h4>
 							<p>Suscríbete a nuestro boletín</p>
 							<div class="email">
-								<div class="send">
-									<i class="zmdi zmdi-mail-send"></i>
-								</div>
-								<form method="post">
-								<input type="email" required="" pattern="[^@]+@[^@]+.[a-zA-Z]{2,6}" name="email"
-									placeholder="Tu correo electronico...">
-
-								<input type="submit">
-							</form>
-
+								<form class="form-contact js-contact-form" method="POST" action="includes/contact-form.php">
+									<div class="form-input">
+										<input type="email" required pattern="[^@]+@[^@]+.[a-zA-Z]{2,6}" name="email" placeholder="Correo electrónico...">
+									</div>
+									<div class="form-bottom">
+										<input type="submit">
+									</div>
+								</form>
 							</div>
 
 							<span>Todos los derechos reservados<a href="seigle.xyz" target="_blank">2024
@@ -642,7 +640,7 @@
 			</div>
 		</div>
 	</footer>
-	<!--  JS  -->
+		<!--  JS  -->
 	<!-- Jquery -->
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 	<!-- Bootrap -->
@@ -675,19 +673,6 @@
 	<script src="js/config-contact.js"></script>
 	<!-- Main Js -->
 	<script src="js/custom.js"></script>
-	<!-- JS VENDOR -->
-	<script type="text/javascript" src="js/vendor/jquery.min.js"></script>
-	<script type="text/javascript" src="js/vendor/bootstrap.min.js"></script>
-	<script type="text/javascript" src="js/vendor/jquery.superslides.js"></script>
-	<script type="text/javascript" src="js/vendor/owl.carousel.js"></script>
-	<script type="text/javascript" src="js/vendor/bootstrap-hover-dropdown.min.js"></script>
-	<script type="text/javascript" src="js/vendor/jquery.magnific-popup.min.js"></script>
-	
-	<!-- sendmail -->
-	<script type="text/javascript" src="js/vendor/validator.min.js"></script>
-	<script type="text/javascript" src="js/vendor/form-scripts.js"></script>
-	<script type="text/javascript" src="js/script.js"></script>
-
 	<a href="https://wa.link/bl8xfn" class="btn-wsp" target="_blank">
 		<i class="zmdi zmdi-whatsapp"></i>
 </body>

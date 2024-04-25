@@ -1204,7 +1204,7 @@ margin: 0;
   .footer-section .footer-content .footer-items.footer-items-1 {
     padding-left: 70px; }
   .footer-section .footer-content .footer-items.footer-items-2 {
-    padding-left: 0px; }
+    padding-left: 63px; }
   .footer-section .footer-content .footer-items .logo {
     padding-bottom: 30px; }
   .footer-section .footer-content .footer-items h4 {
@@ -1213,8 +1213,8 @@ margin: 0;
   .footer-section .footer-content .footer-items p {
     color: #fff; }
   .footer-section .footer-content .footer-items span {
-    font-size: 14px;
-    color: #fff; }
+    color: #fff;
+    font-size: 12px; }
   .footer-section .footer-content .footer-items .socials {
     padding-top: 21px; }
     .footer-section .footer-content .footer-items .socials a {
